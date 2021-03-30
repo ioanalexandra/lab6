@@ -10,7 +10,7 @@ public class MainFrame extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = -3324406852037247002L;
-	
+
 	private ConfigPanel configPanel;
 	private ControlPanel controlPanel;
 	DrawingPanel canvas;
@@ -20,14 +20,22 @@ public class MainFrame extends JFrame {
 		Init();
 	}
 
+	public int getSidesNumber() {
+		return configPanel.sides();
+	}
+
+	public String getComboElement() {
+		return (String) configPanel.getColorCombo().getSelectedItem();
+	}
+
 	void Init() {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		canvas = new DrawingPanel(this);
-		configPanel = new ConfigPanel(this);;
+		configPanel = new ConfigPanel(this);
 		controlPanel = new ControlPanel(this);
 		add(canvas, BorderLayout.CENTER);
-		add(configPanel, BorderLayout.NORTH );
+		add(configPanel, BorderLayout.NORTH);
 		add(controlPanel, BorderLayout.SOUTH);
-		pack(); 
+		pack();
 	}
 }
