@@ -1,2 +1,2 @@
 # lab6
-Am lucrat o parte din cerintele compulsory din laboratorul 6, urmeaza sa le termin, inca lucrez la ultimele doua.
+Am lucrat cerintele compulsory din laboratorul 6 si prima cerinta dintre cele optionale.
